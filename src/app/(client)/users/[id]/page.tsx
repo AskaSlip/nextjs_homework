@@ -1,10 +1,8 @@
 import React from 'react';
-import {Params} from "next/dist/shared/lib/router/utils/route-matcher";
 import {IUser} from "@/models/IUser";
 
 const userPage = ({searchParams}:any) => {
     let user: IUser = JSON.parse(searchParams.data)
-    console.log(user);
     return (
         <div>
             <ul>
